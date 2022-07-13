@@ -10,11 +10,12 @@ function main() {
   var urlcode = window.location.search.substring(1);
 
   if (urlcode != "") {
-    var simulroll = [0, 0, 0]; 
-    for(i=0; i<urlcode.length; i++){
-      if(urlcode[i]=="A"){simulroll[0]++}
-      if(urlcode[i]=="B"){simulroll[1]++}
-      if(urlcode[i]=="C"){simulroll[2]++}
+    var simulroll = [0, 0, 0];
+    for (i = 0; i < urlcode.length; i++) {
+      if (urlcode[i] == "A") { simulroll[0]++ }
+      else if (urlcode[i] == "B") { simulroll[1]++ }
+      else if (urlcode[i] == "C") { simulroll[2]++ }
+      else { i = urlcode.length }
     }
   }
 
